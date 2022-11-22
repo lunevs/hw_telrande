@@ -1,6 +1,6 @@
 package com.github.tel_ran_de.hw3;
 
-public class Converter {
+public class Lesson {
     public static void main(String[] args) {
 
         String str = "Привет, Сергей!";
