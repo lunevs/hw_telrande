@@ -16,8 +16,12 @@ public class Main {
         System.out.println("after: " + tr.toLower(upString));
         System.out.println("");
 
-        System.out.println("before: " + longString);
-        System.out.println("after (cut 10 symbols): " + tr.cutToN(longString, 10));
+        try {
+            System.out.println("before: " + longString);
+            System.out.println("after (cut 10 symbols): " + tr.cutToN(longString, 1000));
+        } catch (IllegalArgumentException e) {
+            System.out.println("IllegalArgumentException: " + longString);
+        }
 
     }
 }

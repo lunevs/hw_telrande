@@ -10,9 +10,9 @@ public class TextRedactor {
         return inputString.toLowerCase();
     }
 
-    String cutToN(String inputString, int stringCutSize) {
+    String cutToN(String inputString, int stringCutSize) throws IllegalArgumentException {
         if (inputString.length() < stringCutSize) {
-            return inputString + "...";
+            throw new IllegalArgumentException("stringCutSize less then string");
         } else {
             return inputString.substring(0, stringCutSize) + "...";
         }
