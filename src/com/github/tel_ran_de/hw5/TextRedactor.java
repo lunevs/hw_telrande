@@ -10,7 +10,11 @@ public class TextRedactor {
         return inputString.toLowerCase();
     }
 
-    String cutToN(String inputString, int stringSize) {
-        return "";
+    String cutToN(String inputString, int stringCutSize) {
+        if (inputString.length() < stringCutSize) {
+            return inputString + "...";
+        } else {
+            return inputString.substring(0, stringCutSize) + "...";
+        }
     }
 }
