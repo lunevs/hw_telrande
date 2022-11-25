@@ -20,6 +20,7 @@ public class Main {
             System.out.println("before: " + longString);
             System.out.println("after (cut 10 symbols): " + tr.cutToN(longString, 1000));
         } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
             System.out.println("IllegalArgumentException: " + longString);
         }
 

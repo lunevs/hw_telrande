@@ -12,7 +12,7 @@ public class TextRedactor {
 
     String cutToN(String inputString, int stringCutSize) throws IllegalArgumentException {
         if (inputString.length() < stringCutSize) {
-            throw new IllegalArgumentException("stringCutSize less then string");
+            throw new IllegalArgumentException("Illegal argument stringCutSize. More then string length");
         } else {
             return inputString.substring(0, stringCutSize) + "...";
         }
