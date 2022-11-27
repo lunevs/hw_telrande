@@ -1,4 +1,4 @@
-package com.github.tel_ran_de.hw5;
+package com.github.tel_ran_de.lesson5;
 
 public class TextRedactor {
 
