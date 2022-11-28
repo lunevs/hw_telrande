@@ -1,4 +1,4 @@
-package com.github.tel_ran_de.hw2;
+package com.github.tel_ran_de.hw5;
 
 import java.util.Scanner;
 
@@ -17,6 +17,11 @@ public class InputScaner {
     public int getIntValue(String message) {
         System.out.println(message);
         return scanner.nextInt();
+    }
+
+    public double getDoubleValue(String message) {
+        System.out.println(message);
+        return scanner.nextDouble();
     }
 
 }
