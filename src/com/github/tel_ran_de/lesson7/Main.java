@@ -3,36 +3,56 @@ package com.github.tel_ran_de.lesson7;
 
 public class Main {
 
-    static final int MAX_ARGUMENT = 999;
 
+    static double calc(char opC, double el1, double el2) {
+        if (opC == '+') {
+            return el1 + el2;
+        } else if (opC == '/' && el2 != 0) {
+            return el1 / el2;
+        } else if (opC == '-') {
+            return el1 - el2;
+        } else if (opC == '*') {
+            return el1 * el2;
+        } else {
+            return 0;
+        }
+    }
 
     public static void main(String[] args) {
 
         // блок ввода данных и определения переменных
         InputScaner inp = new InputScaner();
-        double res = 0;
+        int el1;
+        int el2;
 
-        int el1 = inp.getIntValue("Enter 1-st operand");
+        // читаем первую переменную
+        if (inp.setIntValue("Enter 1-st operand")) {
+            el1 = inp.intValue;
+        } else {
+            System.out.println(inp.errorMessage);
+            return;
+        }
+
+        // читаем знак операции
         String op = inp.getStringValue("Enter sign");
         char opC = op.charAt(0);
-        int el2 = inp.getIntValue("Enter 2-nd operand");
 
+        // читаем вторую переменную
+        if (inp.setIntValue("Enter 2-nd operand")) {
+            el2 = inp.intValue;
+        } else {
+            System.out.println(inp.errorMessage);
+            return;
+        }
 
         // блок вычислительной логики
-        if (opC == '+') {
-            res = el1 + el2;
-        } else if (opC == '/' && el2 != 0) {
-            res = (double) el1 / el2;
-        } else if (opC == '-') {
-            res = el1 - el2;
-        } else if (opC == '*') {
-            res = el1 * el2;
-        }
+        double res = calc(opC, el1, el2);
+
 
         // блок проверки ошибок
         if (opC == '/' && el2 == 0) {
             System.out.println("на 0 делить нельзя");
-        } else if (el1 > MAX_ARGUMENT || el2 > MAX_ARGUMENT || res > MAX_ARGUMENT) {
+        } else if (res > InputScaner.MAX_ARGUMENT) {
             System.out.println("Ошибка: переполнение разрядной сетки");
         } else {
             System.out.println(res);
