@@ -4,8 +4,10 @@ public class ParkingPlace {
     public String parkingCode;
     public String carNumber;
     public Boolean isEmpty;
+
     static int parkingNum = 0;
     static int parkingSq = 5;
+
 
     ParkingPlace(String code) {
         this.parkingCode = code;
