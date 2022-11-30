@@ -23,13 +23,13 @@ public class Main {
 
 
         // бронируем место для Ивана
-        cinemaSeat1.book("Ivan", "Music evening");
+        Ticket tk1 = cinemaSeat1.book("Ivan", "Music evening");
 
         // бронируем место для Марии
-        cinemaSeat3.book("Ivan", "Music evening");
+        Ticket tk2 = cinemaSeat3.book("Ivan", "Music evening");
 
         // бронируем место для Джона
-        cinemaSeat4.book("John", "Cool film 5.0");
+        Ticket tk3 = cinemaSeat4.book("John", "Cool film 5.0");
 
         // текущее состояние брони
         System.out.println("---------------END   POSITION---------------------");

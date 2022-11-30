@@ -12,10 +12,11 @@ public class Seat {
     }
 
     // Класс Seat реализует метод book(), содержащий логику бронирования этого места и создающий новый объект Ticket
-    public void book(String clientName, String eventName) {
+    public Ticket book(String clientName, String eventName) {
         this.isBooked = true;
         currentTicket = new Ticket(clientName, eventName, seatNumber);
         System.out.println(currentTicket);                                  // почему-то если через return пытаюсь вернуть билет, то ругается в классе Main
+        return currentTicket;
     }
 
     @Override
