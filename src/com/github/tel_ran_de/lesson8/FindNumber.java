@@ -30,7 +30,7 @@ public class FindNumber {
             }
 
             if (i == MAX_TRY) {
-                System.out.println("было загадано число: " + myNumber);
+                System.out.println("было загадано число: " + myNumber + "\n\n");
             }
 
             System.out.println("Хотите попробовать еще? (y / n)");
