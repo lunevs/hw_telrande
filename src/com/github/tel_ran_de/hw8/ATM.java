@@ -1,4 +1,4 @@
-package com.github.tel_ran_de.lesson8;
+package com.github.tel_ran_de.hw8;
 
 import java.util.Scanner;
 
