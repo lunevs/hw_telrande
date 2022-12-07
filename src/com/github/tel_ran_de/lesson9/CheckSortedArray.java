@@ -6,7 +6,7 @@ package com.github.tel_ran_de.lesson9;
 import java.util.Arrays;
 import java.util.Random;
 
-public class SortedArray {
+public class CheckSortedArray {
 
     public static int[] randomArray() {
         Random rnd = new Random();
