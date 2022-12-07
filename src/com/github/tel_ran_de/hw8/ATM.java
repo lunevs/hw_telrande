@@ -26,8 +26,8 @@ public class ATM {
             } else if (currentOperationsCounter > DAY_OPERATIONS_LIMIT) {
                 System.out.println("превышен лимит на количество операций");
                 break;
-            } else if (currentOperationAmount > AMOUNT_LIMIT) { // превышен  лимит операции
-                System.out.println("превышена сумма максимальной операции. Укажите другую");
+            } else if (currentOperationAmount > AMOUNT_LIMIT || currentOperationAmount > myMoney) { // превышен  лимит операции
+                System.out.println("превышена сумма операции. Укажите другую");
             } else { // все ок, снимаем
                 currentOperationsCounter += 1;
                 myMoney -= currentOperationAmount;
