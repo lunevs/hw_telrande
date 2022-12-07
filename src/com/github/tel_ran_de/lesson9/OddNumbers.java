@@ -24,19 +24,30 @@ public class OddNumbers {
         int arrSize = sc.nextInt();
 
         int[] myArray = randomArrayInit(arrSize);
-        int minElement = myArray[0];
-        int maxElement = myArray[0];
+        int[] copiedArray = myArray.clone();
+        Arrays.sort(copiedArray);
 
-        for (int j : myArray) {
-            if (j < minElement) {
-                minElement = j;
+        int minElement = copiedArray[0];
+        int maxElement = copiedArray[copiedArray.length-1];
+
+        int minInd = 0;
+        int maxInd = 0;
+
+        for (int j = 0; j < myArray.length; j++) {
+            if (myArray[j] == minElement) {
+                minInd = j;
             }
-            if (j > maxElement) {
-                maxElement = j;
+            if (myArray[j] == maxElement) {
+                maxInd = j;
             }
         }
+
+
         System.out.println("получился массив: " + Arrays.toString(myArray));
-        System.out.println("минимальный элемент массива= " + minElement + ", максимальный = " + maxElement);
+        System.out.println("минимальный элемент массива= " + minElement + " с индексом = " + minInd);
+        System.out.println("максимальный элемент массива= " + maxElement + " с индексом = " + maxInd);
+
+
 
     }
 }
