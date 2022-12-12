@@ -1,7 +1,7 @@
-package com.github.tel_ran_de.lesson9;
+package com.github.tel_ran_de.hw9;
 
-//Дан массив чисел произвольного размера, заполненный целыми числами.
-//        Определить и вывести на экран решение - являются ли значения элементов массива возрастающей последовательностью.
+//Second level: Дан массив чисел произвольного размера, заполненный целыми числами.
+//Определить и вывести на экран решение - являются ли значения элементов массива возрастающей последовательностью.
 
 import java.util.Arrays;
 import java.util.Random;
@@ -18,7 +18,7 @@ public class CheckSortedArray {
         }
         return arr;
     }
-    /// test
+
     public static void main(String[] args) {
 
         int[] rndArray = randomArray();
