@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class BubbleSort {
 
     public static int[] sortNumbers(int[] inputArray) {
+
         int[] arr = inputArray.clone();
         for (int i=1; i<arr.length; i++) {
 
