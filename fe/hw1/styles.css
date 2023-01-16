@@ -1,0 +1,26 @@
+table, th, td {
+    border: black 1px solid;
+    text-align: center;
+    border-collapse: collapse;
+    line-height: 30px;
+}
+.single {
+    width: 200px;
+}
+.double {
+    width: 400px;
+}
+div.col, div.col-2, div.col-4, div.col-6, div.col-12 {
+    border-left: black 1px solid;
+    border-top: black 1px solid;
+}
+.noborder {
+    border: none !important;
+}
+
+div.last-row div {
+    border-bottom: black 1px solid;
+}
+div.last-col {
+    border-right: black 1px solid;
+}

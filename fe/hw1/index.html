@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h2>Вариант реализации таблицы №1</h2>
+
+	<table>
+		<tr>
+			<th rowspan="2" class="single">Вид соединения</th>
+			<th colspan="2" class="double">поля допусков ширины шпоночного паза</th>
+		</tr>
+		<tr>
+			<th class="single">вал</th>
+			<th class="single">втулка</th>
+		</tr>
+		<tr>
+			<td class="single">свободное</td>
+			<td class="single">Н9</td>
+			<td class="single">D10</td>
+		</tr>
+		<tr>
+			<td class="single">нормальное</td>
+			<td class="single">N9</td>
+			<td class="single">I<sub>s</sub>9</td>
+		</tr>
+		<tr>
+			<td class="single">плотное</td>
+			<td colspan="2" class="double">P9</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<hr>
+
+
+	<h2>Вариант реализации таблицы №2</h2>
+	<div>
+		<div class="container text-center" >
+			<div class="row justify-content-center">
+				<div class="col-2">
+					Вид соединения
+				</div>
+				<div class="col-4 noborder">
+					<div class="row">
+						<div class="col-12 last-col">
+							поля допусков ширины шпоночного паза
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							вал
+						</div>
+						<div class="col-6 last-col">
+							втулка
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-2">
+					свободное
+				</div>
+				<div class="col-2">
+					Н9
+				</div>
+				<div class="col-2 last-col">
+					D10
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-2">
+					нормальное
+				</div>
+				<div class="col-2">
+					N9
+				</div>
+				<div class="col-2 last-col">
+					I<sub>s</sub>9
+				</div>
+			</div>
+			<div class="row justify-content-center last-row">
+				<div class="col-2">
+					плотное
+				</div>
+				<div class="col-4 last-col">
+					P9
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
