@@ -1,0 +1,144 @@
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-style: normal;
+    color: #000000;
+}
+header {
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.headerInfo  {
+    width: 600px;
+}
+.headerInfo p {
+    margin-top: 100px;
+}
+.headerTitle {
+    margin-top: 70px;
+}
+.headerTitle span {
+    font-weight: 300;
+    font-size: 200px;
+    line-height: 180px;
+    color: #272727;
+}
+.headerDescription {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 155%;
+    color: #161515;
+    width: 575px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.headerButtons {
+    display: flex;
+}
+.buyButton {
+    background-color: #161515;
+    width: 278px;
+    height: 82px;
+    color: white;
+    font-size: 28px;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-weight: 300;
+}
+.priceBox {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 186%;
+    text-align: center;
+    color: #272727;
+    width: 200px;
+    background-color: white;
+    border: none;
+    margin-left: -2px;
+    box-shadow: 0px 0px 28px rgba(214, 214, 214, 0.25);
+}
+
+.container {
+    background-color: white;
+    width: 500px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.smallIntro {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 186%;
+    text-align: center;
+}
+.mainIntro {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 112.5%;
+    text-align: center;
+}
+.item {
+    margin: 50px 0;
+    width: 400px;
+}
+.itemImg1, .itemImg2 {
+    padding: 0;
+    background-color: #F8F8F8;
+    margin: 0 auto;
+}
+.itemImg1 img {
+    width: 230px;
+    object-fit: contain;
+    margin: 80px auto;
+}
+.itemImg2 img {
+    width: 380px;
+    object-fit: contain;
+    margin: 80px auto;
+}
+.itemHeader {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 25px;
+    text-align: center;
+    margin: 30px auto;
+}
+.itemBody {
+    padding: 5%;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+.footerHeader {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 25px;
+    text-align: center;
+    margin: 30px auto;
+}
+.lineBox {
+    width: 178px;
+    height: 0;
+    border: 1px solid #707070;
+    margin: -15px auto 15px;
+}
+.footerBody {
+    padding: 5%;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+}
+.footerBody a {
+    color: #BB8B5D;
+}
+.footerBody a:hover {
+    text-decoration: none;
+}
