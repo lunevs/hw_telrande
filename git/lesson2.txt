@@ -15,3 +15,4 @@ git checkout BranchName - переключение на ветку
 
 git merge BranchName - слияние ветки с main
 
+git branch -d BranchName - удаление ветки
